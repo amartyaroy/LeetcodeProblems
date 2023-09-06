@@ -3,10 +3,8 @@
  * @return {number}
  */
 var missingNumber = function(nums) {
-    len = nums.length
-    newSet = new Set(nums)
-    for(i=0;i<=len;i++){
-        if(!newSet.has(i)){
+    for(i=0;i<=nums.length;i++){
+        if(!nums.includes(i)){
             return i
         }
     }
